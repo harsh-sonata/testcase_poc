@@ -1,0 +1,26 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Snippet Test Case Generator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Generate Test Case </h1>
+  <form id="generate-test-cases-form" action="/generate-test-cases" method="POST">
+    <label for="code-snippet"><h3>Enter your code snippet:</h3></label>
+    <textarea id="code-snippet" rows="100" required name="codeSnippet"></textarea>
+    <button type="button" onclick="getTestCase(event)">Generate Test Cases</button>
+  </form>
+  <div id="output">
+    <% if (testCases) { %>
+        Test Cases:<br>
+        <%= testCases %>
+      <% } else { %> No test cases generated yet. Enter your code snippet and click the button above.
+    <% } %>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
