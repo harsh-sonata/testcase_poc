@@ -1,0 +1,18 @@
+Design:
+
+The application should have a simple and user-friendly UI interface that allows users to upload a code file or paste a code snippet.
+The UI should have a clear and prominent "Upload" or "Choose File" button that opens a file picker dialog when clicked.
+The UI should also have a textarea where users can paste their code snippet.
+Once the file is uploaded or the code snippet is pasted, the UI should have a "Generate Test Cases" button that triggers the test case generation process.
+The UI should display the generated test cases in a readable and easy-to-understand format.
+The UI should also provide an option to download the generated test cases as a file.
+
+TEST CASE:
+
+{ "codeSnippet": "function addNumbers(a, b) {\n return a + b;\n}\n\nconsole.log(addNumbers(3, 5));" }
+
+
+GITHUB LINK TO ACCESS CODE:
+
+https://github.com/harsh-sonata/testcase_poc
+
