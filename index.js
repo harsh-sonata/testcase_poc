@@ -27,7 +27,7 @@ const apiKey = process.env.OPENAI_API_KEY;
 const openai = new OpenAI(apiKey);
 //console.log(openai);
  
-app.post('/get-test-case', async (req, res) => {
+app.post('/generate-test-cases', async (req, res) => {
   const { codeSnippet } = req.body;
  
   const sysPrompt = "You are a test case generation assistant.";
